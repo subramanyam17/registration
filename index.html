@@ -28,7 +28,7 @@
 		  <div align="right">
 			<a href="#" ng-click="searchUser()">{{title}}</a>
 		  </div>
-		  <form name="personForm">
+		  <form name="personForm" ng-hide="ifSearchUser" >
 			  <span style="color: red;float: right;">* Mandatory fields</span>
 			<div class="form-group" ng-class="{'has-error':personForm.$submitted && personForm.firstname.$error.required}">
 				<label class="mand" for = "name"> Name:  </label>
